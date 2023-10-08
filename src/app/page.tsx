@@ -10,6 +10,7 @@ export default function Home() {
   const [count, setCount] = useState<number>(0);
   const [seeWalls, setSeeWalls] = useState<boolean>(false);
   const [toggleBodies, setToggleBodies] = useState<boolean>(false);
+  const [cubeCount, setCubeCount] = useState<number>(30);
 
   const [spinDirection, setSpinDirection] = useState<number>(1);
 
@@ -24,6 +25,8 @@ export default function Home() {
         gravity={gravity}
         setSpinDirection={setSpinDirection}
         setToggleBodies={setToggleBodies}
+        cubeCount={cubeCount}
+        setCubeCount={setCubeCount}
       />
       <Canvas
         shadows
@@ -51,6 +54,7 @@ export default function Home() {
           setCount={setCount}
           gravity={gravity}
           spinDirection={spinDirection}
+          cubeCount={cubeCount}
         />
       </Canvas>
     </main>

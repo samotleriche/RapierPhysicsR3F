@@ -11,6 +11,7 @@ const Experience = ({
   gravity,
   spinDirection,
   setCount,
+  cubeCount,
 }: any) => {
   return (
     <>
@@ -52,6 +53,7 @@ const Experience = ({
           setCount={setCount}
           gravity={gravity}
           spinDirection={spinDirection}
+          cubeCount={cubeCount}
         />
       </Suspense>
     </>

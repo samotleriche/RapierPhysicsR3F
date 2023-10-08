@@ -19,6 +19,7 @@ const PhysicalWorld = ({
   setCount,
   gravity,
   spinDirection,
+  cubeCount,
 }: any) => {
   const cube = useRef<any>();
   const sphere = useRef<any>();
@@ -27,7 +28,6 @@ const PhysicalWorld = ({
   const lathe = useRef<any>();
   const twistRef = useRef<any>();
 
-  const cubeCount = 200;
   const cubes = useRef(null);
 
   // useEffect(() => {
@@ -60,7 +60,7 @@ const PhysicalWorld = ({
       });
     }
     return instances;
-  }, []);
+  }, [cubeCount]);
 
   const [hovered, set] = useState<any>();
 
