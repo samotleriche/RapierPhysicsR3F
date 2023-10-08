@@ -251,8 +251,8 @@ const PhysicalWorld = ({
         />
       </RigidBody>
 
-      {/* @ts-ignore */}
       {toggleBodies && (
+        // @ts-ignore
         <InstancedRigidBodies restitution={0.7} instances={instances}>
           <instancedMesh
             castShadow

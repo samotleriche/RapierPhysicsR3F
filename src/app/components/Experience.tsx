@@ -14,7 +14,8 @@ const Experience = ({
 }: any) => {
   return (
     <>
-      <Perf openByDefault trackGPU={true} position="top-left" />
+      {seeWalls && <Perf openByDefault trackGPU={true} position="top-left" />}
+
       <ambientLight intensity={0.5} />
       <color attach="background" args={["#000"]} />
       <directionalLight castShadow position={[1, 2, 3]} intensity={1.5} />

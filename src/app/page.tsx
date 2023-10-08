@@ -8,8 +8,8 @@ import { useState } from "react";
 export default function Home() {
   const [gravity, setGravity] = useState<any>([0, -9.81, 0]);
   const [count, setCount] = useState<number>(0);
-  const [seeWalls, setSeeWalls] = useState<boolean>(true);
-  const [toggleBodies, setToggleBodies] = useState<boolean>(true);
+  const [seeWalls, setSeeWalls] = useState<boolean>(false);
+  const [toggleBodies, setToggleBodies] = useState<boolean>(false);
 
   const [spinDirection, setSpinDirection] = useState<number>(1);
 
