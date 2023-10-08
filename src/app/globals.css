@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.test-color {
+  background: #c4d8f0;
+}
+
+.html-wrapper {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.html-wrapper > div {
+  color: 'red';
+}
+
+.colorTest {
+  background: #3866ff;
+}
